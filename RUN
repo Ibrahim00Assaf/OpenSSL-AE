@@ -1,0 +1,8 @@
+openssl enc -aes-256-cbc -e -in helloworld.txt -k hi -pbkdf2 -a
+
+//AES-256-cbc – Specifies the encryption algorithm  (CBC)
+-in helloworld.txt – Specifies the include file
+-k hi – setting the encryption key to any arbitrary term of choice. (for experimental purposes, this was kept as easy as possible.) 
+-pbkdf2 – Password-Based Key Derivation Function 2 
+Securely hashes a password for X amount of iterations
+-a – Base64 encodes the output//
